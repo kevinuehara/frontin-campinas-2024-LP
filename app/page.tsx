@@ -9,6 +9,7 @@ import { Footer } from "./components/Footer";
 import hosts from "./data/hosts.json";
 import staff from "./data/staff.json";
 import { Person } from "./types";
+import Sponsor from "./components/Sponsor";
 
 export default function Home() {
   return (
@@ -212,6 +213,7 @@ export default function Home() {
           </div>
         </section>
       </main>
+      <Sponsor />
       <Footer />
     </>
   );
