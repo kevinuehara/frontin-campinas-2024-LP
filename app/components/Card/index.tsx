@@ -8,6 +8,7 @@ import { MdOutlineInsertLink } from "react-icons/md";
 
 interface CardProps extends Person {
   className?: string;
+  title?: string;
 }
 
 export const Card = ({
@@ -19,10 +20,10 @@ export const Card = ({
 }: CardProps) => {
   return (
     <div
-      className={`flex border-2 border-b-4 border-black w-full md:w-2/5 ${className}`}
+      className={`flex flex-col items-center lg:items-start lg:flex-row border-2 border-b-4 border-b-fuchsia-500 border-x-4 border-fuchsia-400 w-full lg:w-2/5 ${className} p-5`}
     >
       <Image
-        className="border-2 border-white"
+        className="border-2 border-white rounded-md"
         src={pathMedia ?? ""}
         alt={name}
         width={200}
@@ -34,7 +35,7 @@ export const Card = ({
         <h1 className="font-bold text-4xl">{name}</h1>
         <p className="text-xl">{description}</p>
 
-        <div className="flex mt-10">
+        <div className="flex justify-center mt-10">
           {socialMedias.linkedin && <FaLinkedin className="h-8 w-8" />}
           {socialMedias.twitter && <FaSquareXTwitter className="h-8 w-8" />}
           {socialMedias.instagram && <FaSquareInstagram className="h-8 w-8" />}
