@@ -1,7 +1,7 @@
 import { FaInstagram } from "react-icons/fa";
 export const Footer = () => {
   return (
-    <footer className="bg-black h-32 w-screen flex flex-col justify-around items-center text-white mt-11 rounded-lg">
+    <footer className="bg-black h-32 flex flex-col justify-around items-center text-white mt-11 rounded-lg">
       <div className="flex flex-col items-center md:flex-row justify-around w-full">
         <a className="underline text-xl" href="frontincampinas.event@gmail.com">
           frontincampinas.event@gmail.com

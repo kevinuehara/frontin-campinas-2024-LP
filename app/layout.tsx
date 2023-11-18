@@ -16,6 +16,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <script src="/static/clarity/index.js" async />
+      </head>
       <body className={oxygen.className}>{children}</body>
     </html>
   );
