@@ -19,11 +19,8 @@ export const Card = ({
   className,
 }: CardProps) => {
   return (
-    <div
-      className={`flex flex-col items-center lg:items-start lg:flex-row border-2 border-b-4 border-b-fuchsia-500 border-x-4 border-fuchsia-400 w-full lg:w-2/5 ${className} p-5`}
-    >
+    <div className={`flex flex-col ml-10 mt-10 ${className}`}>
       <Image
-        className="border-2 border-white rounded-md"
         src={pathMedia ?? ""}
         alt={name}
         width={200}
@@ -31,16 +28,13 @@ export const Card = ({
         aria-label={`Foto do host e palestrante ${name}`}
         priority
       />
-      <div className="flex flex-col ml-2 h-full">
-        <h1 className="font-bold text-4xl">{name}</h1>
-        <p className="text-xl">{description}</p>
+      <h1 className="font-bold text-4xl mt-2">{name}</h1>
 
-        <div className="flex justify-center mt-10">
-          {socialMedias.linkedin && <FaLinkedin className="h-8 w-8" />}
-          {socialMedias.twitter && <FaSquareXTwitter className="h-8 w-8" />}
-          {socialMedias.instagram && <FaSquareInstagram className="h-8 w-8" />}
-          {socialMedias.linktree && <MdOutlineInsertLink className="h-8 w-8" />}
-        </div>
+      <div className="flex mt-2">
+        {socialMedias.linkedin && <FaLinkedin className="h-8 w-8" />}
+        {socialMedias.twitter && <FaSquareXTwitter className="h-8 w-8" />}
+        {socialMedias.instagram && <FaSquareInstagram className="h-8 w-8" />}
+        {socialMedias.linktree && <MdOutlineInsertLink className="h-8 w-8" />}
       </div>
     </div>
   );
