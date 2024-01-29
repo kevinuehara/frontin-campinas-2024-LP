@@ -6,7 +6,8 @@ const oxygen = Oxygen({ weight: "300", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "FrontIn Campinas 2024",
-  description: "Landing Page para o FrontIn Campinas 2024",
+  description:
+    "FrontIn Campinas 2024, o maior evento FrontEnd de Campinas está de volta!",
 };
 
 export default function RootLayout({
