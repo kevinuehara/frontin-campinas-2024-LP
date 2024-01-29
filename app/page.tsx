@@ -1,3 +1,4 @@
+"use client";
 import {
   Hero,
   Header,
@@ -15,7 +16,7 @@ import {
 export default function Home() {
   return (
     <>
-      <main className="flex flex-col justify-center align-center">
+      <main>
         <Header />
         <Hero />
         <HostsCards />
