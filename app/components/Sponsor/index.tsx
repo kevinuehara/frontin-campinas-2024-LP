@@ -1,6 +1,6 @@
 import React from "react";
 
-const Sponsor = () => {
+export const Sponsor = () => {
   return (
     <div className="flex flex-col w-full h-36 bg-black items-center justify-center">
       <p className="text-white font-extrabold text-2xl">

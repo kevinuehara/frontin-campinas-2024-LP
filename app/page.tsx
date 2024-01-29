@@ -1,13 +1,17 @@
-import { Footer } from "./components/Footer";
+import {
+  Hero,
+  Header,
+  HostsCards,
+  RealizationCards,
+  StaffCards,
+  Sponsor,
+  Footer,
+} from "./components";
 
-import Sponsor from "./components/Sponsor";
-import { Header } from "./components/Header";
-import { Hero } from "./components/Hero";
-import { HostsCards } from "./components/HostsCards";
-import { StaffCards } from "./components/StaffCards";
-import { RealizationCards } from "./components/RealizationCards";
-import { Speakers } from "./components/Speakers";
-
+/**
+ * Retorna a página principal do site
+ * @returns JSX.Element
+ */
 export default function Home() {
   return (
     <>
@@ -17,7 +21,7 @@ export default function Home() {
         <HostsCards />
         <StaffCards />
         <RealizationCards />
-        <Speakers />
+        {/* <Speakers /> */}
         <Sponsor />
         <Footer />
       </main>
