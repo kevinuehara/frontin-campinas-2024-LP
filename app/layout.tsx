@@ -2,7 +2,10 @@ import type { Metadata } from "next";
 import { Raleway } from "next/font/google";
 import "./globals.css";
 
-const raleway = Raleway({ weight: "300", subsets: ["latin"] });
+const raleway = Raleway({
+  weight: ["100", "200", "400", "500", "600"],
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "FrontIn Campinas 2024",
