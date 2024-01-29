@@ -1,3 +1,7 @@
+import { colors } from "@/app/assets/colors";
+import { css } from "@emotion/css";
+import clsx from "clsx";
+
 interface ButtonProps {
   className?: string;
 }
@@ -5,9 +9,18 @@ interface ButtonProps {
 export const Button = ({ className }: ButtonProps) => {
   return (
     <button
-      className={`bg-indigo-600 hover:bg-indigo-400 text-white font-semibold rounded-lg text-xl p-4 ${className}`}
+      className={clsx(
+        `font-semibold rounded text-lg p-[0.94rem] ${className}`,
+        css({
+          backgroundColor: colors.primary,
+          transition: "filter 0.2s",
+          "&:hover": {
+            filter: "brightness(0.9)",
+          },
+        })
+      )}
     >
-      Quero ser avisado
+      Quero ser avisado!
     </button>
   );
 };
