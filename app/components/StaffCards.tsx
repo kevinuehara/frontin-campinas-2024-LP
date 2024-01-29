@@ -1,6 +1,6 @@
-import { Card } from "./components/Card";
-import staff from "./data/staff.json";
-import { Person } from "./types";
+import { Card } from "./Card";
+import staff from "../data/staff.json";
+import { Person } from "../types";
 
 export const StaffCards = () => {
   return (

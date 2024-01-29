@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { AiTwotoneCalendar } from "react-icons/ai";
 import { FaLocationDot } from "react-icons/fa6";
-import { Button } from "./components/Button";
+import { Button } from "./Button";
 
 /**
  * Header da página Home

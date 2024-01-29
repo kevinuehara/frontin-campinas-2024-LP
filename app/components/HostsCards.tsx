@@ -1,6 +1,6 @@
-import { Card } from "./components/Card";
-import hosts from "./data/hosts.json";
-import { Person } from "./types";
+import { Card } from "./Card";
+import hosts from "../data/hosts.json";
+import { Person } from "../types";
 
 export const HostsCards = () => {
   return (
