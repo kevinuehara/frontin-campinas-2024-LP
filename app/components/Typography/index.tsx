@@ -5,7 +5,7 @@ export const Title: FC<{
 }> = ({ children }) => {
   return (
     <h2
-      className="uppercase text-[4.5rem] leading-[100%] font-[700]"
+      className="uppercase text-[2.5rem] md:text-[4.5rem] leading-[100%] font-[700]"
       data-aos="fade-up"
     >
       {children}

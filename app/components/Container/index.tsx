@@ -11,7 +11,7 @@ export const Container: FC<{
   className?: string;
 }> = ({ children, className }) => {
   return (
-    <div className={clsx("max-w-[1280px] m-auto p-0 mt-0", className)}>
+    <div className={clsx("max-w-[1280px] m-auto md:p-0 mt-0 px-5", className)}>
       {children}
     </div>
   );

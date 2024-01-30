@@ -45,7 +45,7 @@ export const RenderCards = ({ data: hosts }: { data: Person[] }) => (
 
 export const HostsCards = () => {
   return (
-    <section className="bg-black relative pt-[10rem] pb-[10rem]">
+    <section className="bg-black relative pt-[10rem] pb-[10rem] md:translate-x-[100px]">
       <BottomClip color="black" />
       <Container className="relative">
         <div className="flex">

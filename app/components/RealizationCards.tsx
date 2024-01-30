@@ -1,12 +1,13 @@
 import Image from "next/image";
 import { Container, Subtitle, Title, TopClip } from ".";
+import clsx from "clsx";
 
 export const RealizationCards = () => {
   return (
-    <section className="w-full bg-black relative text-white h-[750px]">
+    <section className="w-full bg-black relative text-white">
       <TopClip color="black" />
-      <Container>
-        <div className="flex 100vw pt-[10rem]">
+      <Container className="relative md:translate-x-[100px]">
+        <div className="flex 100vw pt-[10rem] pb-[25rem]">
           <div className="flex flex-col w-full gap-[4rem]">
             <span className="flex flex-col gap-[1rem]">
               <Title>Realização</Title>
@@ -49,6 +50,13 @@ export const RealizationCards = () => {
             </div>
           </div>
         </div>
+        <span
+          className={clsx(
+            "inline-block uppercase text-[6.375rem] opacity-10 -rotate-90 absolute right-[81%] bottom-[35%] font-[700] "
+          )}
+        >
+          Realização
+        </span>
       </Container>
     </section>
   );

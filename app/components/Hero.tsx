@@ -43,14 +43,14 @@ export const BottomClip = ({
 export const Hero = () => {
   return (
     <section className="bg-midnight relative">
-      <Container className="pt-[10rem] translate-x-[100px]">
+      <Container className="pt-[10rem] md:translate-x-[100px]">
         <span className="relative">
           <div className="flex flex-col gap-[3.12rem] ">
             <Title>
               O Maior evento front-end <br /> de Campinas está de volta!
             </Title>
-            <div className="flex gap-[3rem]">
-              <div className="flex flex-col gap-[1rem] w-[36rem]">
+            <div className="flex md:flex-row flex-col gap-[3rem]">
+              <div className="flex flex-col gap-[1rem] md:w-[36rem]">
                 <p data-aos="fade-up" className="leading-[150%] text-lg">
                   <span className="font-bold">
                     Front In Campinas estará de volta em 2024!{" "}
@@ -77,7 +77,7 @@ export const Hero = () => {
                   para toda a área de tecnologia.
                 </p>
               </div>
-              <div className="w-[32rem]">
+              <div className="md:w-[32rem]">
                 <img
                   data-aos="fade-up"
                   className="w-full"
@@ -89,10 +89,10 @@ export const Hero = () => {
           </div>
           <span
             className={clsx(
-              "inline-block uppercase text-[6.375rem] opacity-10 -rotate-90 absolute right-[77%] bottom-[48%] font-[700] "
+              "inline-block uppercase text-[6.375rem] opacity-10 -rotate-90 absolute right-[87%] bottom-[65%] font-[700] "
             )}
           >
-            Organização
+            frontin
           </span>
         </span>
       </Container>

@@ -8,13 +8,13 @@ export const Footer = () => {
   return (
     <footer
       className={clsx(
-        "",
+        "py-5",
         css({
           backgroundColor: colors.black,
         })
       )}
     >
-      <Container className="flex flex-row-reverse justify-between pt-5 pb-5">
+      <Container className="flex flex-col-reverse items-center md:items-start md:gap-[2rem] md:text-left text-center md:flex-row-reverse justify-between">
         <div className="flex flex-col">
           <h5 className="text-lg font-bold uppercase">Contato</h5>
           <a

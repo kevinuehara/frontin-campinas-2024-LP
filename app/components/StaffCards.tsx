@@ -1,14 +1,12 @@
-import { Card } from "./Card";
 import staff from "../data/staff.json";
-import { Person } from "../types";
 import { AreaHeader, Container, RenderCards } from ".";
 import clsx from "clsx";
 
 export const StaffCards = () => {
   return (
-    <section className="w-full bg-midnight relative">
-      <Container className="relative">
-        <div className="flex pt-[20rem] pb-[20rem]">
+    <section className="w-full bg-midnight relative ">
+      <Container className="relative md:translate-x-[100px]">
+        <div className="flex pt-[20rem] pb-[20rem] ">
           <div className="flex flex-col w-full">
             <AreaHeader
               title="Organização"

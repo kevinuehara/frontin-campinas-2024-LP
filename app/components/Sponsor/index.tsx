@@ -15,7 +15,6 @@ export const Sponsor = () => {
       )}
     >
       <TopClip />
-      {/* <BottomClip /> */}
       <Container className="text-right">
         <p data-aos="fade-up" className="font-extrabold uppercase text-2xl">
           Quer patrocinar o evento?
