@@ -11,7 +11,7 @@ export const HostsCards = () => {
           <div className="flex flex-col">
             <AreaHeader
               title="Hosts"
-              pre="Apresentadores do"
+              pre="Apresentador do"
               bold="Front In Campinas 2024"
             />
             <RenderCards data={hosts} />
