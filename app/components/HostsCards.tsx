@@ -1,36 +1,71 @@
 import { Card } from "./Card";
 import hosts from "../data/hosts.json";
 import { Person } from "../types";
+import { BottomClip, Container, Title } from ".";
+import clsx from "clsx";
+
+export interface IAreaHeaderProps extends ISubtitleProps {
+  title: string;
+}
+
+export const AreaHeader = ({ title, ...props }: IAreaHeaderProps) => (
+  <span className="flex flex-col gap-[1rem] pb-[4.5rem]">
+    <Title>{title}</Title>
+    <Subtitle {...props} />
+  </span>
+);
+
+export interface ISubtitleProps {
+  pre: string;
+  bold: string;
+}
+export const Subtitle = ({ pre, bold }: ISubtitleProps) => {
+  return (
+    <h3 data-aos="fade-up" className="text-[1.25rem] uppercase">
+      {pre} <span className="font-bold">{bold}</span>
+    </h3>
+  );
+};
+
+export const RenderCards = ({ data: hosts }: { data: Person[] }) => (
+  <div className="flex flex-col md:flex-row gap-[3rem]">
+    {hosts.map((host: Person, i) => (
+      <Card
+        data-aos="fade-up"
+        data-aos-delay={((i + 1) * 100).toString()}
+        key={host.name}
+        description={host.description}
+        name={host.name}
+        socialMedias={host.socialMedias}
+        pathMedia={host.pathMedia}
+      />
+    ))}
+  </div>
+);
 
 export const HostsCards = () => {
   return (
-    <section className="w-full bg-black relative text-white h-[650px]">
-      <div className="flex mt-10">
-        <div className="text-night font-bold flex justify-center items-center w-20">
-          <h2 className="-rotate-90 md:text-7xl text-2xl">Hosts</h2>
-        </div>
-
-        <div className="flex flex-col w-full">
-          <h1 className="text-5xl upp">Hosts</h1>
-          <h2 className="text-2xl text-gray-500 uppercase mt-2">
-            Apresentadores do{" "}
-            <span className="font-extrabold text-white">
-              Front in Campinas 2024
-            </span>
-          </h2>
-          <div className="flex flex-col md:flex-row">
-            {hosts.map((host: Person) => (
-              <Card
-                key={host.name}
-                description={host.description}
-                name={host.name}
-                socialMedias={host.socialMedias}
-                pathMedia={host.pathMedia}
-              />
-            ))}
+    <section className="bg-black relative pt-[10rem] pb-[10rem]">
+      <BottomClip color="black" />
+      <Container className="relative">
+        <div className="flex">
+          <div className="flex flex-col">
+            <AreaHeader
+              title="Hosts"
+              pre="Apresentadores do"
+              bold="Front In Campinas 2024"
+            />
+            <RenderCards data={hosts} />
           </div>
         </div>
-      </div>
+        <span
+          className={clsx(
+            "inline-block uppercase text-[10rem] opacity-10 -rotate-90 absolute right-[86%] bottom-[27%] font-[700] "
+          )}
+        >
+          Hosts
+        </span>
+      </Container>
     </section>
   );
 };

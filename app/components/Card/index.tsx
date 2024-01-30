@@ -1,40 +1,51 @@
 import { Person } from "@/app/types";
 import Image from "next/image";
 import React from "react";
-import { FaSquareXTwitter } from "react-icons/fa6";
-import { FaSquareInstagram } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa";
-import { MdOutlineInsertLink } from "react-icons/md";
+import { InstagramIcon, LinkedinIcon } from "@/app/assets";
 
 interface CardProps extends Person {
   className?: string;
   title?: string;
 }
 
+const HostName = ({ pre, bold }: { pre: string; bold: string }) => {
+  return (
+    <p className="text-[1.8125rem] uppercase">
+      {pre} <span className="font-bold">{bold}</span>
+    </p>
+  );
+};
+
 export const Card = ({
-  description,
   name,
   socialMedias,
   pathMedia,
   className,
+  ...props
 }: CardProps) => {
   return (
-    <div className={`flex flex-col ml-10 mt-10 ${className}`}>
+    <div className={`flex flex-col gap-[0.375rem] ${className}`} {...props}>
       <Image
         src={pathMedia ?? ""}
         alt={name}
-        width={200}
-        height={200}
+        width={297}
+        height={256}
         aria-label={`Foto do host e palestrante ${name}`}
         priority
       />
-      <h1 className="font-bold text-4xl mt-2">{name}</h1>
+      <HostName pre={name.split(" ")[0]} bold={name.split(" ")[1]} />
 
-      <div className="flex mt-2">
-        {socialMedias.linkedin && <FaLinkedin className="h-8 w-8" />}
-        {socialMedias.twitter && <FaSquareXTwitter className="h-8 w-8" />}
-        {socialMedias.instagram && <FaSquareInstagram className="h-8 w-8" />}
-        {socialMedias.linktree && <MdOutlineInsertLink className="h-8 w-8" />}
+      <div className="flex items-center gap-[0.5rem]">
+        {socialMedias.linkedin && (
+          <a href={socialMedias.linkedin} target="_blank">
+            <InstagramIcon />
+          </a>
+        )}
+        {socialMedias.instagram && (
+          <a href={socialMedias.instagram} target="_blank">
+            <LinkedinIcon />
+          </a>
+        )}
       </div>
     </div>
   );

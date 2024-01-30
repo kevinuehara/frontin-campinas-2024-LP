@@ -6,9 +6,11 @@ interface ButtonProps {
   className?: string;
 }
 
-export const Button = ({ className }: ButtonProps) => {
+export const Button = ({ className, ...props }: ButtonProps) => {
   return (
-    <button
+    <a
+      href="https://forms.gle/k3Q59pW5B7qspd3P7"
+      target="_blank"
       className={clsx(
         `font-semibold rounded text-lg p-[0.94rem] ${className}`,
         css({
@@ -19,8 +21,9 @@ export const Button = ({ className }: ButtonProps) => {
           },
         })
       )}
+      {...props}
     >
       Quero ser avisado!
-    </button>
+    </a>
   );
 };

@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import React, { FC } from "react";
 
 /**
@@ -7,8 +8,13 @@ import React, { FC } from "react";
  */
 export const Container: FC<{
   children: React.ReactNode;
-}> = ({ children }) => {
-  return <div className="max-w-[1280px] m-auto p-0 mt-0">{children}</div>;
+  className?: string;
+}> = ({ children, className }) => {
+  return (
+    <div className={clsx("max-w-[1280px] m-auto p-0 mt-0", className)}>
+      {children}
+    </div>
+  );
 };
 
 export default Container;

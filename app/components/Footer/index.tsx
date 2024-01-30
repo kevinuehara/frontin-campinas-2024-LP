@@ -1,26 +1,47 @@
+import { colors } from "@/app/assets/colors";
+import { css } from "@emotion/css";
+import clsx from "clsx";
 import { FaInstagram } from "react-icons/fa";
+import { Container } from "..";
+import Image from "next/image";
 export const Footer = () => {
   return (
-    <footer className="bg-black h-32 flex flex-col justify-around items-center text-white rounded-lg">
-      <div className="flex flex-col items-center md:flex-row justify-around w-full">
-        <a className="underline text-xl" href="frontincampinas.event@gmail.com">
-          frontincampinas.event@gmail.com
-        </a>
-
-        <div className="flex items-center text-xl">
-          <FaInstagram />
+    <footer
+      className={clsx(
+        "",
+        css({
+          backgroundColor: colors.black,
+        })
+      )}
+    >
+      <Container className="flex flex-row-reverse justify-between pt-5 pb-5">
+        <div className="flex flex-col">
+          <h5 className="text-lg font-bold uppercase">Contato</h5>
           <a
-            className="ml-2 underline"
+            className="hover:underline"
+            href="mailto:frontincampinas.event@gmail.com"
+          >
+            frontincampinas.event@gmail.com
+          </a>
+          <a
+            className="flex items-center gap-[0.5rem] hover:underline"
             href="https://www.instagram.com/frontin_campinas/"
             target="_blank"
           >
-            Instagram
+            <FaInstagram />
+            Conheça nosso instagram
           </a>
         </div>
-      </div>
-      <p className="text-center">
-        FrontIn Campinas 2024 - Todos os direitos reservados
-      </p>
+        <p className="uppercase font-bold">
+          <Image
+            src="/frontin-home.svg"
+            alt="FrontIn Campinas Logo"
+            width={200}
+            height={600}
+            priority
+          />
+        </p>
+      </Container>
     </footer>
   );
 };

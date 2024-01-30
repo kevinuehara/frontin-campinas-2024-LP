@@ -1,26 +1,26 @@
 [
-    {
-        "name": "Kevin Uehara",
-        "description": "Staff Frontend Engineer no IFood, NodeBR Community Partner, FrontIn Campinas Organizer, Speaker and Content Creator",
-        "pathMedia": "/people/kevin.jpg",
-        "socialMedias": {
-            "instagram": "https://www.instagram.com/uehara_kevin/",
-            "twitter": "https://twitter.com/ueharaDev",
-            "linktree": "linktr.ee/kevinuehara",
-            "youtube": "https://www.youtube.com/@ueharakevin/",
-            "linkedin": "https://www.linkedin.com/in/kevin-uehara/"
-          }
-    },
-    {
-        "name": "Ana Neri",
-        "description": "Senior Software Engineer | JavaScript, Node.js | Serveless | LinkedIn Creator | Content Creator at ananeriev | Speaker",
-        "pathMedia": "/people/ana.jpeg",
-        "socialMedias": {
-            "instagram": "https://www.instagram.com/ananeridev/",
-            "twitter": "https://twitter.com/ananeridev",
-            "linktree": "https://beacons.ai/ananeridev",
-            "youtube": "https://www.youtube.com/@AnaNeriDev",
-            "linkedin": "https://www.linkedin.com/in/ananeridev/"
-          }
+  {
+    "name": "Ana Neri",
+    "description": "Senior Software Engineer | JavaScript, Node.js | Serveless | LinkedIn Creator | Content Creator at ananeriev | Speaker",
+    "pathMedia": "/people/ana.png",
+    "socialMedias": {
+      "instagram": "https://www.instagram.com/ananeridev/",
+      "twitter": "https://twitter.com/ananeridev",
+      "linktree": "https://beacons.ai/ananeridev",
+      "youtube": "https://www.youtube.com/@AnaNeriDev",
+      "linkedin": "https://www.linkedin.com/in/ananeridev/"
     }
+  },
+  {
+    "name": "Kevin Uehara",
+    "description": "Staff Frontend Engineer no IFood, NodeBR Community Partner, FrontIn Campinas Organizer, Speaker and Content Creator",
+    "pathMedia": "/people/kevin2.png",
+    "socialMedias": {
+      "instagram": "https://www.instagram.com/uehara_kevin/",
+      "twitter": "https://twitter.com/ueharaDev",
+      "linktree": "linktr.ee/kevinuehara",
+      "youtube": "https://www.youtube.com/@ueharakevin/",
+      "linkedin": "https://www.linkedin.com/in/kevin-uehara/"
+    }
+  }
 ]
