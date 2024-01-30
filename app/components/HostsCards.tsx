@@ -5,9 +5,8 @@ import { AreaHeader, RenderCards } from "./AreaHeader";
 
 export const HostsCards = () => {
   return (
-    <section className="bg-black relative pt-[10rem] pb-[10rem] md:translate-x-[100px]">
-      <BottomClip color="black" />
-      <Container className="relative">
+    <section className="bg-black relative pt-[10rem] pb-[10rem]">
+      <Container className="relative md:translate-x-[100px]">
         <div className="flex">
           <div className="flex flex-col">
             <AreaHeader
@@ -26,6 +25,7 @@ export const HostsCards = () => {
           Hosts
         </span>
       </Container>
+      <BottomClip color="black" />
     </section>
   );
 };

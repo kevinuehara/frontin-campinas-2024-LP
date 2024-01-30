@@ -4,7 +4,7 @@ import { TopClip, BottomClip } from "./TopClip";
 
 export const Hero = () => {
   return (
-    <section className="bg-midnight relative">
+    <section className="bg-midnight relative md:pt-[10rem]">
       <Container className="pt-[10rem] md:translate-x-[100px]">
         <span className="relative">
           <div className="flex flex-col gap-[3.12rem] ">
