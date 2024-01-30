@@ -10,3 +10,5 @@ export * from "./Footer";
 export * from "./Container";
 export * from "./Button";
 export * from "./Typography";
+export * from "./TopClip";
+export * from "./AreaHeader";
