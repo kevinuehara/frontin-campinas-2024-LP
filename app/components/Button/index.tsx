@@ -9,7 +9,7 @@ interface ButtonProps {
 export const Button = ({ className, ...props }: ButtonProps) => {
   return (
     <a
-      href="https://forms.gle/k3Q59pW5B7qspd3P7"
+      href="https://forms.gle/5gXM1uCewkgmH1Uq9"
       target="_blank"
       className={clsx(
         `font-semibold rounded text-lg p-[0.94rem] ${className}`,
