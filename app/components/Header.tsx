@@ -41,13 +41,7 @@ export const Header = () => {
                 priority
               />
             </div>
-            <h1
-              data-aos="fade-up"
-              data-aos-delay="200"
-              className="font-medium text-lg mt-14 text-center z-2"
-            >
-              Call For Papers
-            </h1>
+
             <Button
               data-aos-delay="400"
               data-aos="fade-up"
