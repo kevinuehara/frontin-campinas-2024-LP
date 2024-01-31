@@ -46,7 +46,7 @@ export const Header = () => {
               data-aos-delay="200"
               className="font-medium text-lg mt-14 text-center z-2"
             >
-              Em breve Call For Papers
+              Call For Papers
             </h1>
             <Button
               data-aos-delay="400"
