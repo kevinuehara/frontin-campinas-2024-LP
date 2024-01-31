@@ -23,7 +23,7 @@ export const Button = ({ className, ...props }: ButtonProps) => {
       )}
       {...props}
     >
-      Call4Papers
+      Se inscreva pelo Call4Papers
     </a>
   );
 };
