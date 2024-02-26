@@ -10,5 +10,14 @@
       "youtube": "https://www.youtube.com/@ueharakevin/",
       "linkedin": "https://www.linkedin.com/in/kevin-uehara/"
     }
+  },
+  {
+    "name": "Paulo Cândido",
+    "description": "Senior Front-end Software Engineer | Analista de Sistemas | CPQD | ReactJS | VueJS | Javascript | Typescript",
+    "pathMedia": "/people/paulo.png",
+    "socialMedias": {
+      "instagram": "https://www.instagram.com/paulhenriquev/",
+      "linkedin": "https://www.linkedin.com/in/paulhenriquev/"
+    }
   }
 ]
