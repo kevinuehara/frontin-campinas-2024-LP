@@ -38,12 +38,12 @@ export const Card = ({
       <div className="flex items-center gap-[0.5rem]">
         {socialMedias.linkedin && (
           <a href={socialMedias.linkedin} target="_blank">
-            <InstagramIcon />
+            <LinkedinIcon />
           </a>
         )}
         {socialMedias.instagram && (
           <a href={socialMedias.instagram} target="_blank">
-            <LinkedinIcon />
+            <InstagramIcon />
           </a>
         )}
       </div>
