@@ -1,31 +1,39 @@
 [
-    {
-        "name": "Kevin Uehara",
-        "description": "Staff Frontend Engineer no IFood, NodeBR Community Partner, FrontIn Campinas Organizer, Speaker and Content Creator",
-        "pathMedia": "/people/kevin2.png",
-        "socialMedias": {
-            "instagram": "https://www.instagram.com/uehara_kevin/",
-            "twitter": "https://twitter.com/ueharaDev",
-            "linktree": "linktr.ee/kevinuehara",
-            "youtube": "https://www.youtube.com/@ueharakevin/",
-            "linkedin": "https://www.linkedin.com/in/kevin-uehara/"
-          }
-    },
-    {
-        "name": "Paulo Cândido",
-        "description": "Senior Front-end Software Engineer | Analista de Sistemas | CPQD | ReactJS | VueJS | Javascript | Typescript",
-        "pathMedia": "/people/paulo.png",
-        "socialMedias": {
-            "instagram": "https://www.instagram.com/paulhenriquev/",
-            "linkedin": "https://www.linkedin.com/in/paulhenriquev/"
-          }
-    },
-    {
-        "name": "Claudinei Martins",
-        "description": "Pesquisador e Coordenador de Projetos no CPQD",
-        "pathMedia": "/people/claudinei.png",
-        "socialMedias": {
-            "linkedin": "https://www.linkedin.com/in/claudinei-martins/"
-          }
+  {
+    "name": "Kevin Uehara",
+    "description": "Staff Frontend Engineer no IFood, NodeBR Community Partner, FrontIn Campinas Organizer, Speaker and Content Creator",
+    "pathMedia": "/people/kevin2.png",
+    "socialMedias": {
+      "instagram": "https://www.instagram.com/uehara_kevin/",
+      "twitter": "https://twitter.com/ueharaDev",
+      "linktree": "linktr.ee/kevinuehara",
+      "youtube": "https://www.youtube.com/@ueharakevin/",
+      "linkedin": "https://www.linkedin.com/in/kevin-uehara/"
     }
+  },
+  {
+    "name": "Paulo Cândido",
+    "description": "Senior Front-end Software Engineer | Analista de Sistemas | CPQD | ReactJS | VueJS | Javascript | Typescript",
+    "pathMedia": "/people/paulo.png",
+    "socialMedias": {
+      "instagram": "https://www.instagram.com/paulhenriquev/",
+      "linkedin": "https://www.linkedin.com/in/paulhenriquev/"
+    }
+  },
+  {
+    "name": "Claudinei Martins",
+    "description": "Pesquisador e Coordenador de Projetos no CPQD",
+    "pathMedia": "/people/claudinei.png",
+    "socialMedias": {
+      "linkedin": "https://www.linkedin.com/in/claudinei-martins/"
+    }
+  },
+  {
+    "name": "Fabiani de Souza",
+    "description": "UX Designer",
+    "pathMedia": "/people/fabiani.png",
+    "socialMedias": {
+      "linkedin": "https://www.linkedin.com/in/fabianisouza/"
+    }
+  }
 ]
