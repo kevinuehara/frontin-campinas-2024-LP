@@ -9,9 +9,9 @@ interface ButtonProps {
 export const Button = ({ className, ...props }: ButtonProps) => {
   return (
     <>
-      {/* <a
+      <a
         aria-disabled="true"
-        href="#"
+        href="https://forms.gle/NN1TV5MdX99LdEHS8"
         target="_blank"
         className={clsx(
           `font-semibold rounded text-lg p-[0.94rem] ${className}`,
@@ -25,9 +25,8 @@ export const Button = ({ className, ...props }: ButtonProps) => {
         )}
         {...props}
       >
-        Se inscreva pelo Call4Papers
-      </a> */}
-      <p className="p-[0.94rem] mt-5">Em breve Call4Papers...</p>
+        Acessar Call4Papers
+      </a>
     </>
   );
 };
