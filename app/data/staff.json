@@ -21,19 +21,19 @@
     }
   },
   {
-    "name": "Claudinei Martins",
-    "description": "Pesquisador e Coordenador de Projetos no CPQD",
-    "pathMedia": "/people/claudinei.png",
-    "socialMedias": {
-      "linkedin": "https://www.linkedin.com/in/claudinei-martins/"
-    }
-  },
-  {
     "name": "Fabiani de Souza",
     "description": "UX Designer",
     "pathMedia": "/people/fabiani.png",
     "socialMedias": {
       "linkedin": "https://www.linkedin.com/in/fabianisouza/"
+    }
+  },
+  {
+    "name": "Claudinei Martins",
+    "description": "Pesquisador e Coordenador de Projetos no CPQD",
+    "pathMedia": "/people/claudinei.png",
+    "socialMedias": {
+      "linkedin": "https://www.linkedin.com/in/claudinei-martins/"
     }
   }
 ]

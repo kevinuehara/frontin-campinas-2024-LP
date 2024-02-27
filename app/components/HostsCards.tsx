@@ -10,8 +10,8 @@ export const HostsCards = () => {
         <div className="flex">
           <div className="flex flex-col">
             <AreaHeader
-              title="Host"
-              pre="Apresentador do"
+              title="Hosts"
+              pre="Apresentadores do"
               bold="Front In Campinas 2024"
             />
             <RenderCards data={hosts} />
