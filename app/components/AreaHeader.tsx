@@ -26,7 +26,7 @@ export const Subtitle = ({ pre, bold }: ISubtitleProps) => {
 };
 
 export const RenderCards = ({ data: hosts }: { data: Person[] }) => (
-  <div className="flex flex-col md:flex-row gap-[3rem]">
+  <div className="flex flex-col md:flex-row gap-[3rem] lg:flex-wrap 2xl:flex-nowrap ">
     {hosts.map((host: Person, i) => (
       <Card
         data-aos="fade-up"

@@ -18,7 +18,7 @@ export const StaffCards = () => {
         </div>
         <span
           className={clsx(
-            "inline-block uppercase text-[6.375rem] opacity-10 -rotate-90 absolute right-[77%] bottom-[34%] font-[700] "
+            "inline-block uppercase text-[6.375rem] opacity-10 -rotate-90 absolute right-[77%] bottom-[40%] font-[700] "
           )}
         >
           Organização
