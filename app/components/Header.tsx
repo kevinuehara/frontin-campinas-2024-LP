@@ -21,7 +21,7 @@ export const Header = () => {
         <div className=" flex flex-col items-center content-center gap-[1rem]">
           <div className="flex align-items-center justify-items-center gap-[1rem]">
             <DateIcon />
-            <label className="text-lg font-medium">Mai/2024</label>
+            <label className="text-lg font-extrabold">25 de Maio de 2024</label>
           </div>
           <div className="flex align-items-center justify-items-center gap-[1rem]">
             <LocationIcon />
