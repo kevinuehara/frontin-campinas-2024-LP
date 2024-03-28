@@ -15,15 +15,15 @@ export const Hero = () => {
               <div className="flex flex-col gap-[1rem] md:w-[36rem]">
                 <p data-aos="fade-up" className="leading-[150%] text-lg">
                   <span className="font-bold">
-                    Front In Campinas estará de volta em 2024!{" "}
+                    Front in Campinas está de volta em 2024!{" "}
                   </span>
                   E com ele toda experiência da comunidade de tecnologia!
                 </p>
                 <p data-aos="fade-up" className="leading-[150%] text-lg">
                   <span className="font-bold">
-                    Networking, Inovação, Comunidade e Inclusão{" "}
+                    Networking, Inovação, Comunidade e Inclusão
                   </span>
-                  são os princípios que guiam o FrontIn Campinas.
+                  são os princípios que guiam o Front in Campinas.
                 </p>
                 <p data-aos="fade-up" className="leading-[150%] text-lg">
                   É um evento sem fins lucrativos para compartilhar o
@@ -35,7 +35,7 @@ export const Hero = () => {
                 <p data-aos="fade-up" className="leading-[150%] text-lg">
                   Todas as pessoas em todas as áreas de desenvolvimento podem
                   participar do evento. Além do networking, elas poderão
-                  aprender e conversar sobre carreira e softskils necessários
+                  aprender e conversar sobre carreira e soft skils necessários
                   para toda a área de tecnologia.
                 </p>
               </div>
