@@ -4,19 +4,30 @@ import clsx from "clsx";
 
 interface ButtonProps {
   className?: string;
+  href?: string;
+  variant?: "primary" | "secondary";
 }
 
-export const Button = ({ className, ...props }: ButtonProps) => {
+export const Button = ({
+  className,
+  href = "https://forms.gle/NN1TV5MdX99LdEHS8",
+  variant,
+  ...props
+}: ButtonProps) => {
   return (
     <>
       <a
         aria-disabled="true"
-        href="https://forms.gle/NN1TV5MdX99LdEHS8"
+        href={href}
         target="_blank"
         className={clsx(
-          `font-semibold rounded text-lg p-[0.94rem] ${className}`,
+          `font-semibold rounded text-lg p-[1rem] ${className} font-bold`,
           css({
-            backgroundColor: colors.primary,
+            color: colors.black,
+            backgroundColor:
+              variant === "primary"
+                ? colors.buttonPrimary
+                : colors.buttonSecondary,
             transition: "filter 0.2s",
             "&:hover": {
               filter: "brightness(0.9)",
