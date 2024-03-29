@@ -7,7 +7,7 @@ export const RealizationCards = () => {
     <section className="w-full bg-midnight relative text-white">
       <TopClip />
       <Container className="relative md:translate-x-[100px]">
-        <div className="flex 100vw pt-[10rem] pb-[25rem]">
+        <div className="flex 100vw pt-[10rem] pb-[7rem]">
           <div className="flex flex-col w-full gap-[4rem]">
             <RealizationCardsTitleArea />
             <div className="flex flex-col gap-[4rem]">

@@ -6,12 +6,14 @@ interface ButtonProps {
   className?: string;
   href?: string;
   variant?: "primary" | "secondary";
+  text?: string;
 }
 
 export const Button = ({
   className,
   href = "https://forms.gle/NN1TV5MdX99LdEHS8",
   variant,
+  text = "Acessar Call4Papers",
   ...props
 }: ButtonProps) => {
   return (
@@ -36,7 +38,7 @@ export const Button = ({
         )}
         {...props}
       >
-        Acessar Call4Papers
+        {text}
       </a>
     </>
   );

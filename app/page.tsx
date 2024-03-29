@@ -12,6 +12,9 @@ import AOS from "aos";
 
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { Schedule } from "./components/Schedule";
+import { Keynotes } from "./components/Keynotes";
+import { Place } from "./components/Local";
 
 /**
  * Retorna a página principal do site
@@ -29,11 +32,10 @@ export default function Home() {
       <main className="bg-black max-w-full	overflow-hidden	">
         <Header />
         <Hero />
-        <HostsCards />
-        <StaffCards />
+        <Keynotes />
+        <Place />
+        <Schedule />
         <RealizationCards />
-        {/* <Speakers /> */}
-        <Sponsor />
         <Footer />
       </main>
     </>
