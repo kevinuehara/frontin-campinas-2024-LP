@@ -15,7 +15,7 @@ export default function Home() {
       <main
         className={clsx(backgroundHeader, "overflow-x-hidden overflow-hidden")}
       >
-        <div className="max-w-[1200px] m-auto pb-[2.5rem] flex gap-[4rem] text-[1.125rem] z-2 min-h-[100vh]">
+        <div className="max-w-[1200px] m-auto pb-[2.5rem] flex md:flex-row flex-col md:p-0 p-[2rem] gap-[4rem] text-[1.125rem] z-2 min-h-[100vh]">
           <LeftSide />
           <RightSide />
         </div>
@@ -98,8 +98,8 @@ function LeftSide({}) {
 
 function RightSide({}) {
   return (
-    <div className="min-w-[251px] pt-[1rem]">
-      <aside className="flex flex-col gap-[2rem]">
+    <div className="md:min-w-[251px] md:pt-[1rem] pt-[2rem] md:border-none border-t-white border-t-2">
+      <aside className="flex md:flex-col flex-col-reverse gap-[2rem]">
         <div>
           <Button text="Submeter proposta" />
         </div>
