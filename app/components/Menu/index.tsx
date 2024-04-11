@@ -21,20 +21,17 @@ export const Menu = () => {
     console.log("🚀 ~ useEffect ~ allElementsWithClass:", allElementsWithClass);
 
     const mapElements = (element: Element) => {
+      if (path === currentPathName) {
+        return;
+      }
       // se o pathname for diferente de /, adiciona a classe fadeOut (right)
       if (currentPathName !== "/") {
         element.classList.add("fadeOutRight");
-        // remove a classe fadeInLeft
-        // element.classList.remove("fadeInLeft");
-        // delay de 0.5s para redirecionar
         setTimeout(() => {
           router.push(path);
         }, 80);
       } else {
         element.classList.add("fadeOutLeft");
-        // remove a classe fadeInLeft
-        // element.classList.remove("fadeInRight");
-        // delay de 0.5s para redirecionar
         setTimeout(() => {
           router.push(path);
         }, 80);
