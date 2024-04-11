@@ -1,6 +1,5 @@
 import { Button, Container, Title, TypographySubtitle } from "..";
 import clsx from "clsx";
-import { TopClip, BottomClip } from "../Clips/TopClip";
 
 export const Local = () => {
   return (
