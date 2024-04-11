@@ -1,91 +1,110 @@
 import Link from "next/link";
-import React, { useEffect } from "react";
+import React, { MouseEventHandler, useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import clsx, { ClassValue } from "clsx";
-import { css } from "@emotion/css";
-import { Global } from "@emotion/react";
 import { useRouter } from "next/navigation";
+import { css } from "@emotion/css";
 
-const active = "text-white border-b-white border-b-[2px]";
-const base: ClassValue = "font-medium pb-[0.5rem] transition-all";
+const base: ClassValue =
+  "font-medium pb-[0.5rem] transition-all cursor-pointer";
 
 export const Menu = () => {
   const pathname = usePathname();
   const router = useRouter();
 
-  const handleClick = (path: string) => (e: any) => {
-    debugger;
-    const currentPathName = pathname;
-    const allElementsWithClass = document.querySelectorAll(".fadeInLeft");
-    const allElementsWithClassRight = document.querySelectorAll(".fadeInRight");
-    console.log("🚀 ~ useEffect ~ allElementsWithClass:", allElementsWithClass);
+  const handleClick =
+    (path: string): MouseEventHandler<HTMLAnchorElement> =>
+    (e) => {
+      const currentPathName = pathname;
+      const allElementsWithClass = document.querySelectorAll(".fadeInLeft");
+      const allElementsWithClassRight =
+        document.querySelectorAll(".fadeInRight");
 
-    const mapElements = (element: Element) => {
-      if (path === currentPathName) {
-        return;
-      }
-      // se o pathname for diferente de /, adiciona a classe fadeOut (right)
-      if (currentPathName !== "/") {
-        element.classList.add("fadeOutRight");
+      const mapElements = (element: Element) => {
+        if (path === currentPathName) {
+          return;
+        }
+
+        // se o pathname for diferente de /, adiciona a classe fadeOut (right)
+        if (currentPathName !== "/") {
+          element.classList.add("fadeOutRight");
+        } else {
+          // se o pathname for igual a /, adiciona a classe fadeOut (left)
+          element.classList.add("fadeOutLeft");
+        }
+
         setTimeout(() => {
           router.push(path);
         }, 80);
-      } else {
-        element.classList.add("fadeOutLeft");
-        setTimeout(() => {
-          router.push(path);
-        }, 80);
-        // se o pathname for igual a /, adiciona a classe fadeOut (left)
-        element.classList.add("fadeOutLeft");
-      }
+      };
+
+      // adiciona a classe fadeOut a todos os elementos com a classe fadeOut
+      allElementsWithClass.forEach(mapElements);
+      allElementsWithClassRight.forEach(mapElements);
+
+      e.preventDefault();
     };
 
-    // adiciona a classe fadeOut a todos os elementos com a classe fadeOut
-    allElementsWithClass.forEach(mapElements);
-    allElementsWithClassRight.forEach(mapElements);
+  const [position, setPosition] = useState(0);
+  const [tempPosition, setTempPosition] = useState(0);
+  const [width, setWidth] = useState(0);
+  const [tempWidth, setTempWidth] = useState(0);
 
-    e.preventDefault();
+  const loadPositions = () => {
+    const elementActive = pathname === "/" ? "linkHome" : "linkCallForPapers";
+    const currentElement = document.querySelector("#" + elementActive);
+    if (!currentElement) {
+      return;
+    }
+    const position = (currentElement as HTMLLinkElement).offsetLeft;
+    const selectedWidth = (currentElement as HTMLLinkElement).offsetWidth;
+    setPosition(position);
+    setWidth(selectedWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      loadPositions();
+    });
+    loadPositions();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const handleHover = (elementId: string) => {
+    const currentElement = document.querySelector("#" + elementId);
+    if (!currentElement) {
+      return;
+    }
+    const position = (currentElement as HTMLLinkElement).offsetLeft;
+    setTempPosition(position);
+
+    const selectedWidth = (currentElement as HTMLLinkElement).offsetWidth;
+    setTempWidth(selectedWidth);
+  };
+
+  const handleLeave = () => {
+    setTempWidth(0);
+    setTempPosition(0);
   };
 
   return (
-    <div className="max-w-[1096px] m-auto mb-[2rem] justify-end md:flex-row flex-col p-[2rem] flex gap-[3rem]">
+    <div className="relative max-w-[1096px] m-auto mb-[2rem] justify-end md:flex-row flex-col p-[2rem] flex gap-[3rem]">
       <Link
+        id="linkHome"
+        onMouseOver={() => handleHover("linkHome")}
+        onMouseLeave={handleLeave}
         onClick={handleClick("/")}
-        className={clsx(
-          {
-            [active]: pathname === "/",
-          },
-          base,
-          css(`
-          
-          @keyframes fadeIn {
-            0% {
-              border-bottom-width: 0;
-            }
-            50% {
-              border-bottom-width: 5px;
-            }
-            100% {
-              border-bottom-width: 2px;
-            }
-          }
-
-          animation: fadeIn 0.5s;
-          `)
-        )}
+        className={clsx(base)}
         href="/"
       >
         Front in Campinas 2024
       </Link>
       <Link
+        id="linkCallForPapers"
+        onMouseOver={() => handleHover("linkCallForPapers")}
+        onMouseLeave={handleLeave}
         onClick={handleClick("/call-for-papers")}
-        className={clsx(
-          {
-            [active]: pathname !== "/",
-          },
-          base,
-          "flex gap-[.625rem] items-end"
-        )}
+        className={clsx(base, "flex gap-[.625rem] items-end")}
         href="/call-for-papers"
       >
         <span>Call 4 Papers</span>
@@ -93,6 +112,24 @@ export const Menu = () => {
           Aberto!
         </span>
       </Link>
+
+      <div
+        className={clsx(
+          css({
+            height: "2px",
+            backgroundColor: "white",
+            width: tempWidth || width,
+            top: 64,
+            left: tempPosition || position,
+            position: "absolute",
+            transition: "all ease 0.2s",
+            "&:hover": {
+              height: "4px",
+            },
+          }),
+          "md:block hidden"
+        )}
+      ></div>
     </div>
   );
 };
