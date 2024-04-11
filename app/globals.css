@@ -14,3 +14,46 @@ body {
 *{
     scroll-behavior: smooth;
 }
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translate(100%)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translate(-100%)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+.fadeInLeft {
+    animation: slideIn 0.3s;
+}
+
+.fadeInRight {
+    animation: slideInRight 0.3s;
+}
+
+.fadeOutRight {
+    transition: 0.3s all;
+    opacity: 0;
+    transform: translate(100%)
+}
+
+.fadeOutLeft {
+    transition: 0.3s all;
+    opacity: 0;
+    transform: translate(-100%)
+}
