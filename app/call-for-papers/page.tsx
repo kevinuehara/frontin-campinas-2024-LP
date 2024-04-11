@@ -75,7 +75,7 @@ function LeftSide({}) {
           </li>
         </SectionList>
       </section>
-      <section>
+      <section className="pb-[4rem]">
         <SectionTitle Icon={CategoryIcon}>Temas</SectionTitle>
         <p className="pl-[2rem] mb-[10px]">
           Convidamos propostas que abordem aspectos técnicos e de carreira da
