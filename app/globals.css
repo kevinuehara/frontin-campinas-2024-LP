@@ -57,3 +57,21 @@ body {
     opacity: 0;
     transform: translate(-100%)
 }
+
+@keyframes fadeIn {
+    0% {
+        border-bottom-width: 0;
+    }
+
+    50% {
+        border-bottom-width: 5px;
+    }
+
+    100% {
+        border-bottom-width: 2px;
+    }
+}
+
+.menuLinkAnimation {
+    animation: fadeIn 0.5s;
+}
