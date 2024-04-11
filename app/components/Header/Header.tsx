@@ -5,43 +5,43 @@ import { DateIcon, LocationIcon } from "../../assets";
 import { css } from "@emotion/css";
 import clsx from "clsx";
 
+export const backgroundHeader = clsx(
+  "bg-gradient-to-r bg-black pt-[2.65rem]",
+  css({
+    "@keyframes rotateBgHeader": {
+      from: {
+        transform: "rotate(0deg)",
+      },
+      to: {
+        transform: "rotate(360deg)",
+      },
+    },
+    position: "relative",
+    backdropFilter: "blur(6.6px)",
+
+    "&::before": {
+      content: "''",
+      position: "absolute",
+      width: "100%",
+      height: "100%",
+      top: 0,
+      left: 0,
+      backgroundImage: "url(/logo_transparent.png)",
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "center",
+      backgroundSize: "auto 100%",
+      animation: "rotateBgHeader 15s linear infinite",
+      filter: "blur(20px)",
+    },
+  })
+);
+
 /**
  * Header da página Home
  */
 export const Header = () => {
   return (
-    <div
-      className={clsx(
-        "bg-gradient-to-r bg-black pt-[2.65rem]",
-        css({
-          "@keyframes rotateBgHeader": {
-            from: {
-              transform: "rotate(0deg)",
-            },
-            to: {
-              transform: "rotate(360deg)",
-            },
-          },
-          position: "relative",
-          backdropFilter: "blur(6.6px)",
-
-          "&::before": {
-            content: "''",
-            position: "absolute",
-            width: "100%",
-            height: "100%",
-            top: 0,
-            left: 0,
-            backgroundImage: "url(/logo_transparent.png)",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
-            backgroundSize: "auto 100%",
-            animation: "rotateBgHeader 15s linear infinite",
-            filter: "blur(20px)",
-          },
-        })
-      )}
-    >
+    <div className={backgroundHeader}>
       <Container className="relative">
         <section className="md:h-screen z-2">
           <div className="flex flex-col items-center justify-center md:h-[80%] min-h-[700px] pb-[10rem]">
