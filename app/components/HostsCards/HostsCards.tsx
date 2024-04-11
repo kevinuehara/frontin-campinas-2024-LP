@@ -1,7 +1,7 @@
-import hosts from "../data/hosts.json";
-import { BottomClip, Container } from ".";
+import hosts from "../../data/hosts.json";
+import { BottomClip, Container } from "../";
 import clsx from "clsx";
-import { AreaHeader, RenderCards } from "./AreaHeader";
+import { AreaHeader, RenderCards } from "../AreaHeader/AreaHeader";
 
 export const HostsCards = () => {
   return (

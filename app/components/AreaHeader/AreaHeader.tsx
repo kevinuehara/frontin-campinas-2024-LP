@@ -1,6 +1,6 @@
-import { Card } from "./Card";
-import { Person } from "../types";
-import { Title } from ".";
+import { Card } from "../Card";
+import { Person } from "../../types";
+import { Title } from "..";
 
 export interface IAreaHeaderProps extends ISubtitleProps {
   title: string;
@@ -14,13 +14,13 @@ export const AreaHeader = ({ title, ...props }: IAreaHeaderProps) => (
 );
 
 export interface ISubtitleProps {
-  pre: string;
-  bold: string;
+  pre?: string;
+  bold?: string;
 }
 export const Subtitle = ({ pre, bold }: ISubtitleProps) => {
   return (
     <h3 data-aos="fade-up" className="text-[1.25rem] uppercase">
-      {pre} <span className="font-bold">{bold}</span>
+      {pre} {bold && <span className="font-bold">{bold}</span>}
     </h3>
   );
 };
