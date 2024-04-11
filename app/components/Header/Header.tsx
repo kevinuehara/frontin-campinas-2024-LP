@@ -32,6 +32,7 @@ export const backgroundHeader = clsx(
       backgroundSize: "auto 100%",
       animation: "rotateBgHeader 15s linear infinite",
       filter: "blur(20px)",
+      zIndex: "-1",
     },
   })
 );

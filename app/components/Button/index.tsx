@@ -19,7 +19,6 @@ export const Button = ({
   return (
     <>
       <a
-        aria-disabled="true"
         href={href}
         target="_blank"
         className={clsx(

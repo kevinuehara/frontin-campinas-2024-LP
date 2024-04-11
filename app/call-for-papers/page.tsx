@@ -2,25 +2,21 @@
 import AOS from "aos";
 
 import "aos/dist/aos.css";
-import { useEffect } from "react";
-import { Footer, backgroundHeader } from "../components";
+import { Button, Footer, backgroundHeader } from "../components";
 import clsx from "clsx";
+import { CategoryIcon, MicIcon } from "@/app/assets";
 
 /**
  * Retorna a página principal do site
  * @returns JSX.Element
  */
 export default function Home() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1500,
-    });
-  }, []);
-
   return (
     <>
-      <main className={clsx(backgroundHeader)}>
-        <div className="max-w-[1200px] m-auto flex gap-[4rem]">
+      <main
+        className={clsx(backgroundHeader, "overflow-x-hidden overflow-hidden")}
+      >
+        <div className="max-w-[1200px] m-auto pb-[2.5rem] flex gap-[4rem] text-[1.125rem] z-2 min-h-[100vh]">
           <LeftSide />
           <RightSide />
         </div>
@@ -30,19 +26,28 @@ export default function Home() {
   );
 }
 
-const SectionTitle = ({ children }: { children: string }) => (
-  <h2 className="uppercase text-[1.5rem] mb-[1rem]">{children}</h2>
+const SectionTitle = ({
+  children,
+  Icon,
+}: {
+  children: string;
+  Icon?: React.FC<React.SVGProps<SVGSVGElement>>;
+}) => (
+  <span className="flex gap-[0.5rem] items-center mb-[1rem]">
+    {Boolean(Icon) && Icon && <Icon />}
+    <h2 className="uppercase font-medium text-[1.5rem]">{children}</h2>
+  </span>
 );
 
 const SectionList = ({ children }: { children: React.ReactNode }) => (
-  <ul className="list-disc list-inside pl-[2rem] flex gap-[0.625rem] flex-col">
+  <ul className="list-disc pl-[3.75rem] flex gap-[0.625rem] flex-col">
     {children}
   </ul>
 );
 
 function LeftSide({}) {
   return (
-    <div className="flex gap-[2rem] flex-col text-[1.125rem] max-w-[781px]">
+    <div className="flex gap-[2rem] flex-col max-w-[781px]">
       <section>
         <h1 className="uppercase text-[3rem] font-bold">Call 4 papers</h1>
         <p>
@@ -53,11 +58,11 @@ function LeftSide({}) {
         </p>
       </section>
       <section>
-        <SectionTitle>Tipos de apresentação</SectionTitle>
+        <SectionTitle Icon={MicIcon}>Tipos de apresentação</SectionTitle>
         <SectionList>
           <li>
             <strong>Pitch, 10 minutos</strong>
-            {/* <br /> */}
+            <br />
             Apresentação rápida para pessoas que tem um conteúdo interessante a
             compartilhar, mas de forma breve, em menos tempo que nas palestras
             convencionais. É uma boa forma de fazer sua primeira apresentação.
@@ -71,10 +76,10 @@ function LeftSide({}) {
         </SectionList>
       </section>
       <section>
-        <SectionTitle>Temas</SectionTitle>
+        <SectionTitle Icon={CategoryIcon}>Temas</SectionTitle>
         <p className="pl-[2rem] mb-[10px]">
           Convidamos propostas que abordem aspectos técnicos e de carreira da
-          área. Os temas podem incluir, mas não se limitam a:
+          área. <br /> Os temas podem incluir, mas não se limitam a:
         </p>
         <SectionList>
           <li>Front-end</li>
@@ -94,10 +99,13 @@ function LeftSide({}) {
 
 function RightSide({}) {
   return (
-    <div className="min-w-[251px]">
-      <aside>
-        <SectionTitle>datas importantes</SectionTitle>
+    <div className="min-w-[251px] pt-[1rem]">
+      <aside className="flex flex-col gap-[2rem]">
+        <div>
+          <Button text="Submeter proposta" />
+        </div>
         <ul>
+          <SectionTitle>datas importantes</SectionTitle>
           <li>
             <strong>Submissão:</strong> até 25 de abril
           </li>
