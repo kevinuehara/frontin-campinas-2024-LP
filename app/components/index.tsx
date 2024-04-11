@@ -12,3 +12,4 @@ export * from "./Button";
 export * from "./Typography";
 export * from "./Clips/TopClip";
 export * from "./AreaHeader/AreaHeader";
+export * from "./Menu";
