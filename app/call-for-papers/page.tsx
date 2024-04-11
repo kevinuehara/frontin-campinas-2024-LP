@@ -1,7 +1,7 @@
 "use client";
 
 import "aos/dist/aos.css";
-import { Button, Footer, backgroundHeader } from "../components";
+import { Button, Footer, Menu, backgroundHeader } from "../components";
 import clsx from "clsx";
 import { CategoryIcon, MicIcon } from "@/app/assets";
 
@@ -15,7 +15,8 @@ export default function Home() {
       <main
         className={clsx(backgroundHeader, "overflow-x-hidden overflow-hidden")}
       >
-        <div className="max-w-[1200px] m-auto pb-[2.5rem] flex md:flex-row flex-col md:p-0 p-[2rem] gap-[4rem] text-[1.125rem] z-2 min-h-[100vh]">
+        <Menu />
+        <div className="max-w-[1096px] m-auto pb-[2.5rem] flex md:flex-row flex-col md:p-0 p-[2rem] gap-[4rem] text-[1.125rem] z-2 min-h-[100vh]">
           <LeftSide />
           <RightSide />
         </div>

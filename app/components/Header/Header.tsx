@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { Button, Container } from "..";
+import { Button, Container, Menu } from "..";
 import { DateIcon, LocationIcon } from "../../assets";
 import { css } from "@emotion/css";
 import clsx from "clsx";
@@ -43,6 +43,7 @@ export const backgroundHeader = clsx(
 export const Header = () => {
   return (
     <div className={backgroundHeader}>
+      <Menu />
       <Container className="relative">
         <section className="md:h-screen z-2">
           <div className="flex flex-col items-center justify-center md:h-[80%] min-h-[700px] pb-[10rem]">
