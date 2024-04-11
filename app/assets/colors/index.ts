@@ -4,4 +4,5 @@ export const colors = {
   black: "#000000",
   buttonPrimary: "#63D7FF",
   buttonSecondary: "#12A1D3",
+  yellow: "#FFD966",
 };
