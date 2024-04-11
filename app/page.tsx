@@ -22,13 +22,15 @@ export default function Home() {
   return (
     <>
       <main className="bg-black max-w-full	overflow-hidden	">
-        <Header />
-        <Hero />
-        <Keynotes />
-        <Local />
-        <Schedule />
-        <RealizationCards />
-        <Footer />
+        <div>
+          <Header />
+          <Hero />
+          <Keynotes />
+          <Local />
+          <Schedule />
+          <RealizationCards />
+          <Footer />
+        </div>
       </main>
     </>
   );

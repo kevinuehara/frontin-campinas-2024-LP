@@ -44,7 +44,7 @@ export const Header = () => {
   return (
     <div className={backgroundHeader}>
       <Menu />
-      <Container className="relative">
+      <Container className="relative fadeInRight">
         <section className="md:h-screen z-2">
           <div className="flex flex-col items-center justify-center md:h-[80%] min-h-[700px] pb-[10rem]">
             <div className="flex md:flex-row flex-col md:gap-[41px]">

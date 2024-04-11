@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 import { Button, Footer, Menu, backgroundHeader } from "../components";
 import clsx from "clsx";
 import { CategoryIcon, MicIcon } from "@/app/assets";
+import { css } from "@emotion/css";
 
 /**
  * Retorna a página principal do site
@@ -16,7 +17,12 @@ export default function Home() {
         className={clsx(backgroundHeader, "overflow-x-hidden overflow-hidden")}
       >
         <Menu />
-        <div className="max-w-[1096px] m-auto pb-[2.5rem] flex md:flex-row flex-col md:p-0 p-[2rem] gap-[4rem] text-[1.125rem] z-2 min-h-[100vh]">
+        <div
+          className={clsx(
+            "fadeInLeft",
+            "max-w-[1096px] m-auto pb-[2.5rem] flex md:flex-row flex-col md:p-0 p-[2rem] gap-[4rem] text-[1.125rem] z-2 min-h-[100vh]"
+          )}
+        >
           <LeftSide />
           <RightSide />
         </div>
