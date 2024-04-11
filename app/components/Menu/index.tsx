@@ -10,7 +10,7 @@ const base: ClassValue = "font-medium pb-[0.5rem] transition-all";
 export const Menu = () => {
   const pathname = usePathname();
   return (
-    <div className="max-w-[1096px] m-auto mb-[2rem] justify-end flex gap-[3rem]">
+    <div className="max-w-[1096px] m-auto mb-[2rem] justify-end md:flex-row flex-col p-[2rem] flex gap-[3rem]">
       <Link
         className={clsx(
           {
