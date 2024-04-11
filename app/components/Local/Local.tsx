@@ -1,8 +1,8 @@
-import { Button, Container, Title, TypographySubtitle } from ".";
+import { Button, Container, Title, TypographySubtitle } from "..";
 import clsx from "clsx";
-import { TopClip, BottomClip } from "./TopClip";
+import { TopClip, BottomClip } from "../Clips/TopClip";
 
-export const Place = () => {
+export const Local = () => {
   return (
     <section id="local" className="bg-midnight relative md:pt-[10rem]">
       <Container className="pt-[10rem] md:translate-x-[100px]  min-h-[860px] pb-[5rem]">

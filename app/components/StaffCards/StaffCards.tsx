@@ -1,5 +1,5 @@
-import staff from "../data/staff.json";
-import { AreaHeader, Container, RenderCards } from ".";
+import staff from "../../data/staff.json";
+import { AreaHeader, Container, RenderCards } from "..";
 import clsx from "clsx";
 
 export const StaffCards = () => {

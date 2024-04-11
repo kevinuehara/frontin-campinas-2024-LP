@@ -1,6 +1,6 @@
-import { BottomClip, Container, TopClip } from ".";
+import { BottomClip, Container, TopClip } from "..";
 import clsx from "clsx";
-import { AreaHeader } from "./AreaHeader";
+import { AreaHeader } from "../AreaHeader/AreaHeader";
 
 export const Schedule = () => {
   return (

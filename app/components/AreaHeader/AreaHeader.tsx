@@ -1,6 +1,6 @@
-import { Card } from "./Card";
-import { Person } from "../types";
-import { Title } from ".";
+import { Card } from "../Card";
+import { Person } from "../../types";
+import { Title } from "..";
 
 export interface IAreaHeaderProps extends ISubtitleProps {
   title: string;

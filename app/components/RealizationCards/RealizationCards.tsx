@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Container, Subtitle, Title, TopClip, TypographySubtitle } from ".";
+import { Container, Subtitle, Title, TopClip, TypographySubtitle } from "..";
 import clsx from "clsx";
 
 export const RealizationCards = () => {

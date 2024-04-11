@@ -1,20 +1,12 @@
 "use client";
-import {
-  Hero,
-  Header,
-  HostsCards,
-  RealizationCards,
-  StaffCards,
-  Sponsor,
-  Footer,
-} from "./components";
+import { Hero, Header, RealizationCards, Footer } from "./components";
 import AOS from "aos";
 
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { Schedule } from "./components/Schedule";
 import { Keynotes } from "./components/Keynotes";
-import { Place } from "./components/Local";
+import { Local } from "./components/Local";
 
 /**
  * Retorna a página principal do site
@@ -33,7 +25,7 @@ export default function Home() {
         <Header />
         <Hero />
         <Keynotes />
-        <Place />
+        <Local />
         <Schedule />
         <RealizationCards />
         <Footer />

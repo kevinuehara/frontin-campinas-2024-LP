@@ -1,6 +1,6 @@
-import { Container, Title } from ".";
+import { Container, Title } from "..";
 import clsx from "clsx";
-import { TopClip, BottomClip } from "./TopClip";
+import { TopClip, BottomClip } from "../Clips/TopClip";
 
 export const Hero = () => {
   return (

@@ -1,5 +1,5 @@
 import { css } from "@emotion/css";
-import { colors } from "../assets/colors";
+import { colors } from "../../assets/colors";
 
 export const TopClip = ({
   color = "darkGray",

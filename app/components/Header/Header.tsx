@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
-import { Button, Container } from ".";
-import { DateIcon, LocationIcon } from "../assets";
+import { Button, Container } from "..";
+import { DateIcon, LocationIcon } from "../../assets";
 import { css } from "@emotion/css";
 import clsx from "clsx";
 
