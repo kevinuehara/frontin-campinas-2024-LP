@@ -8,9 +8,33 @@ import { css } from "@emotion/css";
 const base: ClassValue =
   "font-medium pb-[0.5rem] transition-all cursor-pointer";
 
+const getElementPositionAndWidth = (
+  elId: string
+): {
+  position: number;
+  width: number;
+} => {
+  const currentElement = document.querySelector("#" + elId);
+  if (!currentElement) {
+    return {
+      position: 0,
+      width: 0,
+    };
+  }
+  const position = (currentElement as HTMLLinkElement).offsetLeft;
+  const width = (currentElement as HTMLLinkElement).offsetWidth;
+  return {
+    position,
+    width,
+  };
+};
+
+type Position = ReturnType<typeof getElementPositionAndWidth>;
+
 export const Menu = () => {
   const pathname = usePathname();
   const router = useRouter();
+  const elementId = pathname === "/" ? "linkHome" : "linkCallForPapers";
 
   const handleClick =
     (path: string): MouseEventHandler<HTMLAnchorElement> =>
@@ -45,50 +69,44 @@ export const Menu = () => {
       e.preventDefault();
     };
 
-  const [position, setPosition] = useState(0);
-  const [tempPosition, setTempPosition] = useState(0);
-  const [width, setWidth] = useState(0);
-  const [tempWidth, setTempWidth] = useState(0);
+  const [positionAndWidth, setPositionAndWidth] = useState({} as Position);
+  const [tempPositionAndWidth, setTempPositionAndWidth] = useState(
+    {} as Position
+  );
+
+  const { position, width } = positionAndWidth;
+  const { position: tempPosition, width: tempWidth } = tempPositionAndWidth;
 
   const loadPositions = () => {
-    const elementActive = pathname === "/" ? "linkHome" : "linkCallForPapers";
-    const currentElement = document.querySelector("#" + elementActive);
-    if (!currentElement) {
-      return;
-    }
-    const position = (currentElement as HTMLLinkElement).offsetLeft;
-    const selectedWidth = (currentElement as HTMLLinkElement).offsetWidth;
-    setPosition(position);
-    setWidth(selectedWidth);
+    setPositionAndWidth(getElementPositionAndWidth(elementId));
   };
 
   useEffect(() => {
     window.addEventListener("resize", () => {
       loadPositions();
     });
+
     loadPositions();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleHover = (elementId: string) => {
-    const currentElement = document.querySelector("#" + elementId);
-    if (!currentElement) {
-      return;
-    }
-    const position = (currentElement as HTMLLinkElement).offsetLeft;
-    setTempPosition(position);
-
-    const selectedWidth = (currentElement as HTMLLinkElement).offsetWidth;
-    setTempWidth(selectedWidth);
+    setTempPositionAndWidth(getElementPositionAndWidth(elementId));
   };
 
   const handleLeave = () => {
-    setTempWidth(0);
-    setTempPosition(0);
+    setTempPositionAndWidth({
+      position: 0,
+      width: 0,
+    });
   };
 
   return (
-    <div className="relative max-w-[1096px] m-auto mb-[2rem] justify-end md:flex-row flex-col p-[2rem] flex gap-[3rem]">
+    <div
+      className={clsx(
+        "relative max-w-[1096px] m-auto mb-[2rem] justify-end md:flex-row flex-col p-[2rem] flex gap-[3rem]"
+      )}
+    >
       <Link
         id="linkHome"
         onMouseOver={() => handleHover("linkHome")}
@@ -123,9 +141,6 @@ export const Menu = () => {
             left: tempPosition || position,
             position: "absolute",
             transition: "all ease 0.2s",
-            "&:hover": {
-              height: "4px",
-            },
           }),
           "md:block hidden"
         )}
