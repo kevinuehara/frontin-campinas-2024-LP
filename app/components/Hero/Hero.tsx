@@ -22,7 +22,7 @@ export const Hero = () => {
                 <p data-aos="fade-up" className="leading-[150%] text-lg">
                   <span className="font-bold">
                     Networking, Inovação, Comunidade e Inclusão
-                  </span>
+                  </span>{" "}
                   são os princípios que guiam o Front in Campinas.
                 </p>
                 <p data-aos="fade-up" className="leading-[150%] text-lg">
