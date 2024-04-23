@@ -47,14 +47,24 @@ export const RealizationCards = () => {
                 />
                 <Image
                   src="/company/devpira.png"
-                  alt="logo da nodebr"
+                  alt="logo da DevPira"
                   width={200}
                   height={300}
                   data-aos="fade-up"
                   data-aos-delay="300"
-                  aria-label="logo da nodebr"
+                  aria-label="logo da Dev Pira"
                   priority
                 />
+                <Image
+                src="/company/gdg-americana.png"
+                alt="logo do GDG Americana"
+                width={200}
+                height={300}
+                data-aos="fade-up"
+                data-aos-delay="300"
+                aria-label="logo da GDG Americana"
+                priority
+              />
               </PartnerArea>
             </div>
           </div>
