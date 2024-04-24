@@ -33,7 +33,30 @@ export const RealizationCards = () => {
                   priority
                 />
               </PartnerArea>
-
+              <PartnerArea text="Patrocinador Ouro">
+                <Image
+                  src="/company/liguelead.png"
+                  alt="Logo da Ligue Lead"
+                  width={200}
+                  height={300}
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  aria-label="logo da nodebr"
+                  priority
+                />
+              </PartnerArea>
+              <PartnerArea text="Patrocinadores Bronze">
+                <Image
+                  src="/company/ciet.png"
+                  alt="logo da nodebr"
+                  width={175}
+                  height={300}
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  aria-label="logo da nodebr"
+                  priority
+                />
+              </PartnerArea>
               <PartnerArea text="Apoio">
                 <Image
                   src="/company/nodebr-white.png"
