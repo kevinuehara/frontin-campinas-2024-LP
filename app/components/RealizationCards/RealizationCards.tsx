@@ -45,7 +45,7 @@ export const RealizationCards = () => {
                   priority
                 />
               </PartnerArea>
-              <PartnerArea text="Patrocinadores Bronze">
+              <PartnerArea text="Patrocinador Bronze">
                 <Image
                   src="/company/ciet.png"
                   alt="logo da nodebr"
