@@ -1,15 +1,21 @@
 import { Card } from "../Card";
 import { Person } from "../../types";
 import { Title } from "..";
+import clsx from "clsx";
 
 export interface IAreaHeaderProps extends ISubtitleProps {
   title: string;
+  noPaddingBottom?: boolean;
 }
 
 export const AreaHeader = ({ title, ...props }: IAreaHeaderProps) => (
-  <span className="flex flex-col gap-[1rem] pb-[4.5rem]">
+  <span
+    className={clsx("flex flex-col gap-[1rem] pb-[4.5rem]", {
+      "pb-0": props.noPaddingBottom,
+    })}
+  >
     <Title>{title}</Title>
-    <Subtitle {...props} />
+    {props.pre && <Subtitle {...props} />}
   </span>
 );
 
