@@ -93,7 +93,7 @@ export const Header = () => {
                     href="https://www.sympla.com.br/evento/front-in-campinas-2024/2441080"
                     // data-aos-delay="400"
                     // data-aos="fade-up"
-                    text="Ingressos Disponíveis!"
+                    text="Garanta seu ingresso!"
                     className="mt-6 z-99"
                   />
                 </div>
