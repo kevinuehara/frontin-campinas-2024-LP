@@ -108,7 +108,7 @@ function RightSide({}) {
     <div className="md:min-w-[251px] md:pt-[1rem] pt-[2rem] md:border-none border-t-white border-t-2">
       <aside className="flex md:flex-col flex-col-reverse gap-[2rem]">
         <div>
-          <Button text="Submeter proposta" />
+          <Button text="Submeter proposta" disabled />
         </div>
         <ul>
           <SectionTitle>datas importantes</SectionTitle>

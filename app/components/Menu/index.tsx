@@ -126,9 +126,6 @@ export const Menu = () => {
         href="/call-for-papers"
       >
         <span>Call 4 Papers</span>
-        <span className="animate-pulse uppercase text-[0.75rem] text-yellow font-bold">
-          Aberto!
-        </span>
       </Link>
 
       <div
