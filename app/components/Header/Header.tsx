@@ -72,7 +72,7 @@ export const Header = () => {
                   <div className="flex align-items-center justify-items-center gap-[1rem] z-4">
                     <DateIcon />
                     <label className="text-2xl font-extrabold z-4">
-                      25 de Maio de 2024
+                      25 de maio de 2024
                     </label>
                   </div>
                   {/* <div> */}
@@ -82,7 +82,7 @@ export const Header = () => {
                   >
                     <LocationIcon />
                     <label className="text-[1.5rem] cursor-pointer font-medium z-4 underline">
-                      Pólis de Alta Tecnologia
+                      Pólis de Tecnologia
                     </label>
                   </a>
                   {/* </div> */}
@@ -90,8 +90,10 @@ export const Header = () => {
 
                 <div>
                   <Button
+                    href="https://www.sympla.com.br/evento/front-in-campinas-2024/2441080"
                     // data-aos-delay="400"
                     // data-aos="fade-up"
+                    text="Ingressos Disponíveis!"
                     className="mt-6 z-99"
                   />
                 </div>
