@@ -13,9 +13,7 @@ export const Keynotes = () => {
           <div className="flex flex-col flex-1 gap-[3rem]">
             <AreaHeader noPaddingBottom title="Keynotes" />
             <LeftKeynote />
-            <div className="flex justify-end">
-              <RightKeynote />
-            </div>
+            <div className="flex justify-end">{/* <RightKeynote /> */}</div>
           </div>
         </div>
         <span
