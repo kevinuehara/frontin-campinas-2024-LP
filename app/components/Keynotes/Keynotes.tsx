@@ -13,7 +13,9 @@ export const Keynotes = () => {
           <div className="flex flex-col flex-1 gap-[3rem]">
             <AreaHeader noPaddingBottom title="Keynotes" />
             <LeftKeynote />
-            <div className="flex justify-end">{/* <RightKeynote /> */}</div>
+            <div className="flex justify-end">
+              <RightKeynote />
+            </div>
           </div>
         </div>
         <span
@@ -69,28 +71,28 @@ const RightKeynote = () => {
       <Image
         width="256"
         height={256}
-        src="/people/poe.png"
-        alt="Foto do Keynote Poe Bellentani"
+        src="/people/pokemaobr.png"
+        alt="Foto do Keynote Pokemão BR"
         data-aos="fade-up"
       />
       <div>
         <h4 className="uppercase text-[29px]" data-aos="fade-up">
-          Poe <span className="font-bold">Bellentani</span>
+          Pokemão <span className="font-bold">BR</span>
         </h4>
         <p className="text-[1.125rem] max-w-[400px]" data-aos="fade-up">
-          Design Senior, Design System Ops at (Zé & TaDa) Delivery, ADPList
-          Mentor
+          Ex dev senior | Escritor | Humorista | Palestrante | pokemaobr.dev |
+          Streamer
         </p>
         <div
           className="mt-[1rem] flex gap-[0.5rem] items-center"
           data-aos="fade-up"
         >
-          <a href="https://www.linkedin.com/in/bellentani/" target="_blank">
+          <a href="https://www.linkedin.com/in/pokemaobr/" target="_blank">
             <LinkedinIcon />
           </a>
-          {/* <a href="https://www.instagram.com/danvitoriano/" target="_blank">
+          <a href="https://www.instagram.com/pokemaobr/" target="_blank">
             <InstagramIcon />
-          </a> */}
+          </a>
         </div>
       </div>
     </div>
