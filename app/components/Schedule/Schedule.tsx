@@ -51,10 +51,10 @@ export const Schedule = () => {
         </div>
         <span
           className={clsx(
-            "inline-block uppercase nowrap text-[102px] opacity-10 -rotate-90 absolute right-[86%] top-[11rem] font-[700] whitespace-nowrap "
+            "inline-block uppercase nowrap text-[102px] opacity-10 -rotate-90 absolute right-[74%] top-[20rem] font-[700] whitespace-nowrap "
           )}
         >
-          Em breve
+          Programação
         </span>
       </Container>
       <TopClip color="black" />
