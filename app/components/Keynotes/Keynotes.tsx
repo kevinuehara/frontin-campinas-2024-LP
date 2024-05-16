@@ -1,7 +1,6 @@
-import hosts from "../../data/hosts.json";
 import { BottomClip, Container } from "..";
 import clsx from "clsx";
-import { AreaHeader, RenderCards } from "../AreaHeader/AreaHeader";
+import { AreaHeader } from "../AreaHeader/AreaHeader";
 import Image from "next/image";
 import { InstagramIcon, LinkedinIcon } from "@/app/assets";
 
@@ -13,14 +12,14 @@ export const Keynotes = () => {
           <div className="flex flex-col flex-1 gap-[3rem]">
             <AreaHeader noPaddingBottom title="Keynotes" />
             <LeftKeynote />
-            <div className="flex justify-end">
+            <div className="flex justify-end  max-w-[1129px]">
               <RightKeynote />
             </div>
           </div>
         </div>
         <span
           className={clsx(
-            "inline-block uppercase text-[6rem] opacity-10 -rotate-90 absolute left-[-23rem] top-[11rem] font-[700] "
+            "inline-block uppercase text-[6rem] opacity-10 -rotate-90 absolute left-[-20rem] top-[11rem] font-[700] "
           )}
         >
           Keynotes
