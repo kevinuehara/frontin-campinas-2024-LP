@@ -29,8 +29,8 @@
   {
     "hora": "11h15",
     "tipo": "Talk",
-    "titulo": "Da Linha de Comando à Comunidade: Construindo Softwares Melhores juntas",
-    "palestrante": "Pachi Parra"
+    "titulo": "Como ser valorizado e ter destaque profissional utilizando estratégias de UX Design",
+    "palestrante": "Claudio Pelizari"
   },
   {
     "hora": "11h40",
@@ -59,8 +59,8 @@
   {
     "hora": "14h15",
     "tipo": "Talk",
-    "titulo": "Como ser valorizado e ter destaque profissional utilizando estratégias de UX Design",
-    "palestrante": "Claudio Pelizari"
+    "titulo": "Da Linha de Comando à Comunidade: Construindo Softwares Melhores juntas",
+    "palestrante": "Pachi Parra"
   },
   {
     "hora": "14h40",
@@ -94,8 +94,8 @@
   {
     "hora": "16h40",
     "tipo": "Talk",
-    "titulo": "Em breve",
-    "palestrante": "Em breve"
+    "titulo": "Clean Code no Front-End: Escrevendo código JavaScript de alta qualidade",
+    "palestrante": "Larissa Azevedo"
   },
   {
     "hora": "17h05",
