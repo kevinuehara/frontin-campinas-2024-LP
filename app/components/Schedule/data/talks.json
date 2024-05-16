@@ -1,111 +1,111 @@
 [
   {
-    "hora": "9h00",
+    "hora": "8h30",
     "tipo": "accreditation",
     "titulo": "Credenciamento"
   },
   {
-    "hora": "9h30",
+    "hora": "9h00",
     "tipo": "opening",
     "titulo": "Abertura"
   },
   {
-    "hora": "9h50",
+    "hora": "9h20",
     "tipo": "Talk",
     "titulo": "UX Writing para devs: como melhorar a experiência trocando as palavras.",
     "palestrante": "Ana Silveira"
   },
   {
-    "hora": "10h30h",
+    "hora": "10h00",
     "tipo": "coffee",
     "titulo": "Café"
   },
   {
-    "hora": "11h05",
+    "hora": "10h35",
     "tipo": "Pitch",
     "titulo": "Frontend Blindado: Top 3 Práticas para uma Web Mais Segura",
     "palestrante": "Bianca Pereira"
   },
   {
-    "hora": "11h15",
+    "hora": "10h45",
     "tipo": "Talk",
     "titulo": "Como ser valorizado e ter destaque profissional utilizando estratégias de UX Design",
     "palestrante": "Claudio Pelizari"
   },
   {
-    "hora": "11h40",
+    "hora": "11h10",
     "tipo": "Talk",
     "titulo": "Guia básico de SEO para devs frontend",
     "palestrante": "Vinícius Casarin"
   },
   {
-    "hora": "12h05",
+    "hora": "11h35",
     "tipo": "KeyNote",
     "titulo": "Hypermedia Driven Applications e htmx - Retomando a força do HTML",
     "palestrante": "Pokemão BR",
     "descricao": "Ex dev senior | Escritor | Humorista | Palestrante | pokemaobr.dev | Streamer"
   },
   {
-    "hora": "13h00",
+    "hora": "12h30",
     "tipo": "lunch",
     "titulo": "Almoço"
   },
   {
-    "hora": "14h05",
+    "hora": "13h35",
     "tipo": "Pitch",
     "titulo": "Criando seu próprio console do Chat GPT em 10 minutos",
     "palestrante": "Rafael Teixeira"
   },
   {
-    "hora": "14h15",
+    "hora": "13h45",
     "tipo": "Talk",
     "titulo": "Da Linha de Comando à Comunidade: Construindo Softwares Melhores juntas",
     "palestrante": "Pachi Parra"
   },
   {
-    "hora": "14h40",
+    "hora": "14h10",
     "tipo": "Talk",
     "titulo": "React Native, uma alternativa viável",
     "palestrante": "Alfredo Colito"
   },
   {
-    "hora": "15h05",
+    "hora": "14h35",
     "tipo": "Talk",
     "titulo": "Resultados vs. Esforço: O Paradoxo do Desenvolvimento de Software",
     "palestrante": "Jhonatas Faria"
   },
   {
-    "hora": "15h30",
+    "hora": "15h00",
     "tipo": "Talk",
     "titulo": "Be up-to-date: Como o aprendizado ágil pode ajudar na sua evolução de carreira",
     "palestrante": "Erik Antonio"
   },
   {
-    "hora": "16h00",
+    "hora": "15h30",
     "tipo": "coffee",
     "titulo": "Café"
   },
   {
-    "hora": "16h15",
+    "hora": "15h45",
     "tipo": "Talk",
     "titulo": "Novidades do Angular 2024",
     "palestrante": "Rafael Paiva"
   },
   {
-    "hora": "16h40",
+    "hora": "16h10",
     "tipo": "Talk",
     "titulo": "Clean Code no Front-End: Escrevendo código JavaScript de alta qualidade",
     "palestrante": "Larissa Azevedo"
   },
   {
-    "hora": "17h05",
+    "hora": "16h35",
     "tipo": "KeyNote",
     "titulo": "Soluções de low-code/no-code para criar front-end, junto com o uso de IAs",
     "palestrante": "Dan Vitoriano",
     "descricao": "LinkedIn Top Voice | Idealizador Orgulho Tech | Cofounder Tech 40+ | Professor | Criador da Tech Television Brasil"
   },
   {
-    "hora": "18h00",
+    "hora": "17h30",
     "tipo": "end",
     "titulo": "Encerramento"
   }
