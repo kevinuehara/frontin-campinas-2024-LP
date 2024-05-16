@@ -136,6 +136,10 @@ export const TalkCard: React.FC<TalkCardProps> = ({ talk, viewType }) => {
             "&:hover div:first-child": {
               transform: "scale(1.1)",
             },
+            "@media (max-width: 768px)": {
+              flexDirection: "column",
+              maxWidth: "236px",
+            },
           })}
         >
           <div
@@ -144,7 +148,6 @@ export const TalkCard: React.FC<TalkCardProps> = ({ talk, viewType }) => {
               height: "100%",
               minHeight: "150px",
               minWidth: "158px",
-
               backgroundImage: `url(/speakers/${
                 getSpeakerImage(talk.speaker) + ".jpg"
               })`,
@@ -172,6 +175,16 @@ export const TalkCard: React.FC<TalkCardProps> = ({ talk, viewType }) => {
                 left: viewType?.direction === "left" ? "17px" : "-16px",
                 transform: "scale(1.2)",
                 top: "12px",
+              },
+
+              "@media (max-width: 768px)": {
+                clipPath: "polygon(0 0, 100% 0, 100% 100%, 10% 94%, 0 100%)",
+                "&:before": {
+                  content: '""',
+                  clipPath: "polygon(10% 94%,0 100%, 100% 100%)",
+                  top: "-16px",
+                  left: "20px",
+                },
               },
             })}
           ></div>

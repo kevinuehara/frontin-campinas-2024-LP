@@ -9,7 +9,7 @@ const verifyDirection = (talkTitulo: string) => {
   const talksOnlyKeynotePitchTalk = Talks.filter((talk) =>
     ["keynote", "pitch", "talk"].includes(talk.tipo.toLowerCase())
   );
-  debugger;
+
   const index = talksOnlyKeynotePitchTalk.findIndex(
     (talk) => talk.titulo === talkTitulo
   );
