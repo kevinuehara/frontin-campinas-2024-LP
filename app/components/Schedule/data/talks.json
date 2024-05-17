@@ -10,95 +10,95 @@
     "titulo": "Abertura"
   },
   {
-    "hora": "9h20",
+    "hora": "9h30",
     "tipo": "Talk",
     "titulo": "UX Writing para devs: como melhorar a experiência trocando as palavras.",
     "palestrante": "Ana Silveira"
   },
   {
-    "hora": "10h00",
+    "hora": "09h55",
     "tipo": "coffee",
     "titulo": "Café"
   },
   {
-    "hora": "10h35",
+    "hora": "10h15",
     "tipo": "Pitch",
     "titulo": "Frontend Blindado: Top 3 Práticas para uma Web Mais Segura",
     "palestrante": "Bianca Pereira"
   },
   {
-    "hora": "10h45",
+    "hora": "10h25",
     "tipo": "Talk",
     "titulo": "Como ser valorizado e ter destaque profissional utilizando estratégias de UX Design",
     "palestrante": "Claudio Pelizari"
   },
   {
-    "hora": "11h10",
+    "hora": "10h50",
     "tipo": "Talk",
     "titulo": "Guia básico de SEO para devs frontend",
     "palestrante": "Vinícius Casarin"
   },
   {
-    "hora": "11h35",
+    "hora": "11h15",
     "tipo": "KeyNote",
     "titulo": "Hypermedia Driven Applications e htmx - Retomando a força do HTML",
     "palestrante": "Pokemão BR",
     "descricao": "Ex dev senior | Escritor | Humorista | Palestrante | pokemaobr.dev | Streamer"
   },
   {
-    "hora": "12h30",
+    "hora": "12h15",
     "tipo": "lunch",
     "titulo": "Almoço"
   },
   {
-    "hora": "13h35",
+    "hora": "13h15",
     "tipo": "Pitch",
     "titulo": "Criando seu próprio console do Chat GPT em 10 minutos",
     "palestrante": "Rafael Teixeira"
   },
   {
-    "hora": "13h45",
+    "hora": "13h25",
     "tipo": "Talk",
     "titulo": "Da Linha de Comando à Comunidade: Construindo Softwares Melhores juntas",
     "palestrante": "Pachi Parra"
   },
   {
-    "hora": "14h10",
+    "hora": "13h50",
     "tipo": "Talk",
     "titulo": "React Native, uma alternativa viável",
     "palestrante": "Alfredo Colito"
   },
   {
-    "hora": "14h35",
+    "hora": "14h15",
     "tipo": "Talk",
     "titulo": "Resultados vs. Esforço: O Paradoxo do Desenvolvimento de Software",
     "palestrante": "Jhonatas Faria"
   },
   {
-    "hora": "15h00",
+    "hora": "14h40",
     "tipo": "Talk",
     "titulo": "Be up-to-date: Como o aprendizado ágil pode ajudar na sua evolução de carreira",
     "palestrante": "Erik Antonio"
   },
   {
-    "hora": "15h30",
+    "hora": "15h05",
     "tipo": "coffee",
     "titulo": "Café"
   },
   {
-    "hora": "15h45",
+    "hora": "15h15",
     "tipo": "Talk",
     "titulo": "Novidades do Angular 2024",
     "palestrante": "Rafael Paiva"
   },
   {
-    "hora": "16h10",
+    "hora": "15h40",
     "tipo": "Talk",
     "titulo": "Clean Code no Front-End: Escrevendo código JavaScript de alta qualidade",
     "palestrante": "Larissa Azevedo"
   },
   {
-    "hora": "16h35",
+    "hora": "16h05",
     "tipo": "KeyNote",
     "titulo": "Soluções de low-code/no-code para criar front-end, junto com o uso de IAs",
     "palestrante": "Dan Vitoriano",
